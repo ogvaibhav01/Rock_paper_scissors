@@ -1,4 +1,5 @@
 // Rock paper scissors game logic
+    let totalchances = 1;
     function play(userChoice){
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -12,12 +13,18 @@
       (userChoice === 'scissors' && computerChoice === 'paper')
     ) {
       result = "You win!";
+      totalchances++;
     } else {
       result = "You lose!";
+      totalchances++;
     }
-    
-    document.getElementById('result').textContent = 
-  `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
+    if (totalchances === 5) {
+    document.getElementById('result').textContent = `You played all your chances ${totalchances}`;
+      totalchances === 0;
+    } else {
+    document.getElementById('result').textContent =
+    `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
+}
 }
 
 
