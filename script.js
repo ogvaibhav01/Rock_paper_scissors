@@ -2,7 +2,6 @@
     function play(userChoice){
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
     let result = '';
 
     if (userChoice === computerChoice) {
@@ -16,8 +15,9 @@
     } else {
       result = "You lose!";
     }
-
-    alert(`You chose ${userChoice}, computer chose ${computerChoice}. ${result}`);
+    
+    document.getElementById('result').textContent = 
+  `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
 }
 
 

@@ -21,7 +21,7 @@ h1 {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4e89dc;
   color: white;
   border: none;
   border-radius: 12px;
@@ -35,10 +35,9 @@ button:hover {
   background-color: #45a049;
   transform: scale(1.1);
 }
-
 #result {
   margin-top: 50px;
   font-size: 24px;
-  color: #222;
+  color: white;
   font-weight: bold;
 }
